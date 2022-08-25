@@ -1,5 +1,5 @@
 {
-  "name": "@cityofboston/react-fleet",
+  "name": "react-fleet",
   "version": "0.0.0",
   "description": "Components for using Fleet in our webapps",
   "private": true,
