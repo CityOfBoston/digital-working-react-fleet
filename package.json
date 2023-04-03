@@ -17,7 +17,6 @@
     "build:babel": "cross-env BABEL_ENV=esm babel src --ignore '**/*.stories.*','**/*.test.*' --out-dir build --extensions \".ts,.tsx\"",
     "prepare": "yarn run build",
     "test": "jest",
-    "percy": "scripts/percy.js",
     "fetch-templates": "ts-node ./scripts/fetch-templates.ts"
   },
   "jest": {
@@ -45,12 +44,10 @@
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
     "@babel/runtime": "^7.1.2",
-    "@cityofboston/config-babel": "^0.0.0",
-    "@cityofboston/config-typescript": "^0.0.0",
-    "@cityofboston/percy-common": "^0.0.0",
-    "@cityofboston/storybook-common": "^0.0.0",
+    "config-babel": "CityOfBoston/config-babel#main",
+    "config-typescript": "CityOfBoston/config-typescript#main",
+    "storybook-common": "CityOfBoston/storybook-common#main",
     "@emotion/core": "^10.0.10",
-    "@percy/storybook": "^3.0.2",
     "@storybook/addon-a11y": "^5.0.10",
     "@storybook/addon-actions": "^5.0.10",
     "@storybook/addon-knobs": "^5.0.10",
