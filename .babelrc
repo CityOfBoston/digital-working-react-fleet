@@ -7,11 +7,7 @@
   "plugins": [
     [
       "inline-import",
-      {
-        "extensions": [
-          ".html"
-        ]
-      }
+      { "extensions": [ ".html" ] }
     ]
   ]
 }
