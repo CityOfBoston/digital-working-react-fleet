@@ -1,5 +1,5 @@
 {
-  "extends": "./node_modules/@cityofboston/config-typescript/tsconfig.default.json",
+  "extends": "./node_modules/config-typescript/tsconfig.default.json",
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "build"

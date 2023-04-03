@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, array, boolean, text } from '@storybook/addon-knobs';
 
-import { NarrowWrapper } from '@cityofboston/storybook-common';
+import { NarrowWrapper } from 'storybook-common';
 
 import SelectDropdown from './SelectDropdown';
 
