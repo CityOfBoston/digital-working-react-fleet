@@ -41,7 +41,7 @@ type Props = {
   optionalDescription?: string;
 
   required?: boolean;
-  inputMode?: string;
+  inputMode?: "none" | "search" | "text" | "email" | "tel" | "url" | "numeric" | "decimal" | undefined;
   maxLength?: number;
   minLength?: number;
 

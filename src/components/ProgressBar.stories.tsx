@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, button } from '@storybook/addon-knobs';
 
-import { NarrowWrapper } from '../../node_modules/storybook-common';
+import { NarrowWrapper } from 'storybook-common';
 
 import ProgressBar from './ProgressBar';
 

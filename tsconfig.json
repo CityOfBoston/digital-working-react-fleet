@@ -2,7 +2,11 @@
   "extends": "./node_modules/config-typescript/tsconfig.default.json",
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "build"
+    "outDir": "build",
+    "baseUrl": ".", // Here... try with correct values and the issue should get fixed
+    "paths": {
+      "*": ["src/*"] // Here... try with correct values and the issue should get fixed
+    }
   },
   "include": [
     "src/**/*"
