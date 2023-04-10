@@ -2,9 +2,14 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, array, boolean, text } from '@storybook/addon-knobs';
+import {
+  withKnobs,
+  array,
+  boolean,
+  text
+} from '@storybook/addon-knobs';
 
-import { NarrowWrapper } from 'storybook-common';
+// import { NarrowWrapper } from 'storybook-common';
 
 import SelectDropdown from './SelectDropdown';
 
@@ -24,7 +29,7 @@ export const PARTNERSHIP_TYPE = [
 ];
 
 storiesOf('Form Elements|SelectDropdown', module)
-  .addDecorator(story => <NarrowWrapper>{story()}</NarrowWrapper>)
+  // .addDecorator(story => <NarrowWrapper>{story()}</NarrowWrapper>)
   .addDecorator(withKnobs)
   .add('default', () => (
     <SelectDropdown
@@ -39,7 +44,7 @@ storiesOf('Form Elements|SelectDropdown', module)
   ));
 
 storiesOf('Form Elements|SelectDropdown', module)
-  .addDecorator(story => <NarrowWrapper>{story()}</NarrowWrapper>)
+  // .addDecorator(story => <NarrowWrapper>{story()}</NarrowWrapper>)
 
   .add('variants', () => (
     <>

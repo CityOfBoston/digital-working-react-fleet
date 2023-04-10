@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, button } from '@storybook/addon-knobs';
 
-import { NarrowWrapper } from 'storybook-common';
+// import { NarrowWrapper } from 'storybook-common';
 
 import ProgressBar from './ProgressBar';
 
@@ -49,7 +49,7 @@ class InteractiveStep extends React.Component<Props, State> {
 }
 
 storiesOf('ProgressBar', module)
-  .addDecorator(story => <NarrowWrapper>{story()}</NarrowWrapper>)
+  // .addDecorator(story => <NarrowWrapper>{story()}</NarrowWrapper>)
   .addDecorator(withKnobs)
   .add('default', () => (
     <ProgressBar totalSteps={taskList.length} currentStep={4} />

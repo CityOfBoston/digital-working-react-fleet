@@ -3,13 +3,13 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, boolean, text } from '@storybook/addon-knobs';
 
-import { NarrowWrapper } from 'storybook-common';
+// import { NarrowWrapper } from 'storybook-common';
 
 import TextInput from './TextInput';
 
 storiesOf('Form Elements|Inputs/TextInput', module)
   .addDecorator(withKnobs)
-  .addDecorator(story => <NarrowWrapper>{story()}</NarrowWrapper>)
+  // .addDecorator(story => <NarrowWrapper>{story()}</NarrowWrapper>)
   .add('default', () => (
     <TextInput
       label={text('Label text', 'Standard text input')}
@@ -22,7 +22,7 @@ storiesOf('Form Elements|Inputs/TextInput', module)
   ));
 
 storiesOf('Form Elements|Inputs/TextInput', module)
-  .addDecorator(story => <NarrowWrapper>{story()}</NarrowWrapper>)
+  // .addDecorator(story => <NarrowWrapper>{story()}</NarrowWrapper>)
   .add('variations', () => (
     <>
       <TextInput label="Required Input" required />
@@ -57,7 +57,7 @@ storiesOf('Form Elements|Inputs/TextInput', module)
   ));
 
 storiesOf('Form Elements|Inputs/TextInput', module)
-  .addDecorator(story => <NarrowWrapper>{story()}</NarrowWrapper>)
+  // .addDecorator(story => <NarrowWrapper>{story()}</NarrowWrapper>)
   .add('error', () => (
     <>
       <TextInput label="String error" error="Value is not correct" />
