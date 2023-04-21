@@ -50,6 +50,7 @@
     "@storybook/addon-actions": "7.0.6",
     "@storybook/addon-viewport": "7.0.6",
     "@storybook/addons": "7.0.6",
+    "@types/cheerio": "0.22.31",
     "@types/node": "18.15.11",
     "@types/node-fetch": "2.6.3",
     "@types/react": "18.0.37",
