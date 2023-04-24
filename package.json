@@ -4,6 +4,9 @@
   "description": "Components for using Fleet in our webapps",
   "private": true,
   "license": "CC0-1.0",
+  "files": [
+    "build"
+  ],
   "main": "build/react-fleet.es5.js",
   "module": "build/react-fleet.js",
   "type": "module",
