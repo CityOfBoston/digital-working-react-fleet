@@ -60,7 +60,7 @@ type Props = {
     }
   | {
       hideLabel?: false | undefined;
-      label: string | React.ReactChild;
+      label: string;
     });
 
 export default function TextInput(props: Props): JSX.Element {
