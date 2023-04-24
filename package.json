@@ -5,7 +5,7 @@
   "private": true,
   "license": "CC0-1.0",
   "files": [
-    "build"
+    "/build"
   ],
   "main": "build/react-fleet.es5.js",
   "module": "build/react-fleet.js",
@@ -16,7 +16,7 @@
     "prebuild": "rimraf build",
     "build": "concurrently \"yarn run build:typescript\" \"yarn run build:babel && rollup -c\"",
     "build:typescript": "tsc --emitDeclarationOnly",
-    "build:babel": "cross-env BABEL_ENV=esm babel src --ignore '**/*.stories.*','**/*.test.*' --out-dir build --extensions \".ts,.tsx\"",
+    "build:babel": "cross-env BABEL_ENV=esm babel src --out-dir build --extensions \".ts,.tsx\"",
     "prepare": "yarn run build",
     "test": "jest"
   },
