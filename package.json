@@ -15,7 +15,7 @@
   "scripts": {
     "prebuild": "rimraf build",
     "build": "concurrently \"yarn run build:typescript\" \"yarn run build:babel && rollup -c\"",
-    "build:typescript": "tsc --emitDeclarationOnly",
+    "build:typescript": "tsc",
     "build:babel": "cross-env BABEL_ENV=esm babel src --out-dir build --extensions \".ts,.tsx\"",
     "prepare": "yarn run build",
     "test": "jest"
