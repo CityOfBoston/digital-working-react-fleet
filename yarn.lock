@@ -2825,19 +2825,15 @@ config-babel@CityOfBoston/config-babel#main:
   resolved "https://codeload.github.com/CityOfBoston/config-babel/tar.gz/efc690277c78102d4534126c9f6ebb0007daa5f6"
   dependencies:
     "@babel/core" "^7.6.0"
-    "@babel/plugin-proposal-class-properties" "^7.5.5"
-    "@babel/plugin-proposal-decorators" "^7.6.0"
-    "@babel/plugin-proposal-private-methods" "^7.7.4"
-    "@babel/plugin-transform-runtime" "^7.6.0"
-    "@babel/preset-env" "^7.6.0"
-    "@babel/preset-react" "^7.0.0"
-    "@babel/preset-typescript" "^7.6.0"
+    "@babel/plugin-proposal-class-properties" "^7.18.6"
+    "@babel/plugin-proposal-decorators" "^7.18.6"
+    "@babel/plugin-proposal-private-methods" "^7.18.6"
+    "@babel/plugin-transform-runtime" "^7.19.1"
+    "@babel/preset-env" "^7.19.1"
+    "@babel/preset-react" "^7.18.6"
+    "@babel/preset-typescript" "^7.18.6"
     babel-plugin-require-context-hook "^1.0.0"
-    next ">=11.1.0"
-
-config-typescript@CityOfBoston/config-typescript#main:
-  version "0.0.0"
-  resolved "https://codeload.github.com/CityOfBoston/config-typescript/tar.gz/0692454092274a2cd2a2e4f5e3a89cd1752aa007"
+    next ">=11.1.4"
 
 content-disposition@^0.5.4:
   version "0.5.4"
