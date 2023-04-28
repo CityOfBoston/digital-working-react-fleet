@@ -26,8 +26,10 @@ export default function CompatibilityWarning({ userAgent }: Props) {
   // Safety in case the version is odd or anything unexpected happens. We don't
   // want the browser check to crash the app.
   try {
-    const { name, version } = userAgent ? parseUserAgent(userAgent) : detect();
-    const versionMajor = parseInt(version.split('.')[0]);
+    const browser = userAgent ? parseUserAgent(userAgent) : detect();
+    const name = browser?.name || '';
+    const version = browser?.version || '';
+    const versionMajor = parseInt(version?.split('.')[0]);
 
     // Right now we just warn old IE. We could add other browsers, such as old
     // iOS, if we want.

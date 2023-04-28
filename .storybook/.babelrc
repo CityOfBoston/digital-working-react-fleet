@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "config-babel/browser",
+    "config-babel/typescript",
+    "config-babel/storybook"
+  ],
+  "plugins": [
+    [
+      "inline-import",
+      { "extensions": [ ".html" ] }
+    ]
+  ]
+}

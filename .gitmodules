@@ -1,0 +1,4 @@
+[submodule "config-typescript"]
+	path = modules-js/config-typescript
+	url = git@github.com:CityOfBoston/config-typescript.git
+	branch = main

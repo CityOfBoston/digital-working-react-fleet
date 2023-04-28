@@ -30,7 +30,7 @@ interface Props {
   uploadProgress?: number | null; // 0 - 100
   errorMessage?: string | null;
 
-  acceptTypes: string;
+  acceptTypes: {[key: string]: string[]};
 
   defaultPreviewUrl: string;
 }
@@ -53,14 +53,14 @@ interface State {
  * adapted from /services-js/311/components/request/request/QuestionsPane.tsx
  */
 export default class UploadPhoto extends React.Component<Props, State> {
-  private readonly dropzoneRef = React.createRef<Dropzone>();
+  private readonly dropzoneRef = React.createRef<any>();
   private readonly previewRef = React.createRef<HTMLDivElement>();
 
   static defaultProps: Partial<Props> = {
     buttonTitleUpload: 'Upload photo',
     buttonTitleRemove: 'Remove photo',
     buttonTitleCancel: 'Cancel upload',
-    acceptTypes: 'image/*',
+    acceptTypes: {'image/*': ['*']},
     defaultPreviewUrl:
       'https://patterns.boston.gov/images/global/icons/experiential/pdf-doc.svg',
   };
@@ -176,7 +176,7 @@ export default class UploadPhoto extends React.Component<Props, State> {
       <div className="br br-a200" css={ELEM_WRAPPER}>
         <Dropzone
           ref={this.dropzoneRef}
-          accept={acceptTypes}
+          accept = {acceptTypes}
           multiple={false}
           onDrop={this.onDrop}
         >

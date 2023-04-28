@@ -41,7 +41,7 @@ type Props = {
   optionalDescription?: string;
 
   required?: boolean;
-  inputMode?: string;
+  inputMode?: "none" | "search" | "text" | "email" | "tel" | "url" | "numeric" | "decimal" | undefined;
   maxLength?: number;
   minLength?: number;
 
@@ -60,7 +60,7 @@ type Props = {
     }
   | {
       hideLabel?: false | undefined;
-      label: string | React.ReactChild;
+      label: string;
     });
 
 export default function TextInput(props: Props): JSX.Element {
